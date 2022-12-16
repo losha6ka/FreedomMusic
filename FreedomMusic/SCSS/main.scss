@@ -29,7 +29,7 @@
 		transform: translate(20px,0);
 		opacity: 0;
 		font-size: rem(36, );
-		font-weight: 300;
+		font-weight: 100;
 		text-transform: uppercase;
 		max-width: 650px;
 		letter-spacing: 0.1em;
@@ -59,8 +59,8 @@
 		transform: translate(20px,0);
 		opacity: 0;
 		font-size: rem(14, );
-		line-height: 1.2;
 		max-width: 650px;
+		line-height: 1.2;
 		font-weight: 100;
 		letter-spacing: 0.025em;
 		color: #ffffff;	
@@ -87,18 +87,16 @@
 		opacity: 0;
 		border: 1px solid #ffffff;
 		background: none;
-		padding: rem(15, ) rem(40, );
+		padding: rem(20, ) rem(40, ) rem(10) rem(40, );
 		transition: 0.3s;
+		font-size: rem(11, );
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #ffffff;	
 		&:hover{
 			border: 1px solid #bc2503;
 		}
-		& a{
-			font-size: rem(11, );
-			font-weight: 700;
-			text-transform: uppercase;
-			letter-spacing: 0.1em;
-			color: #ffffff;	
-		}	
 	}
 	& .second-btn{
 		animation: 1s title 1s forwards;
@@ -323,12 +321,14 @@
 	&__container {
 		position: relative;
 		padding-top: rem(40, );
+		padding-bottom: rem(40, );
 		display: flex;
 		background-color: black;
 		// background-color: #030303;
 		@media (max-width:582px) {
 			flex-direction: column;
 			padding-top: rem(40, );
+			padding-bottom: rem(10, );
 		}
 		@media (max-width:768px) {
 			padding-top: rem(00, );
@@ -389,9 +389,9 @@
 		position: relative;
 		z-index: 22;
 		padding-left: rem(15, );
-		margin-bottom: -150px;
 		& img{
 			max-width: 100%;
+			margin-bottom: -180px;
 			@media (max-width:582px) {
 				max-height: 300px;
 				margin-bottom: -100px;

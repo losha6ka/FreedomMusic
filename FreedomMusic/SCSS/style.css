@@ -240,7 +240,7 @@
   transform: translate(20px, 0);
   opacity: 0;
   font-size: 2.25rem;
-  font-weight: 300;
+  font-weight: 100;
   text-transform: uppercase;
   max-width: 650px;
   letter-spacing: 0.1em;
@@ -266,8 +266,8 @@
   transform: translate(20px, 0);
   opacity: 0;
   font-size: 0.875rem;
-  line-height: 1.2;
   max-width: 650px;
+  line-height: 1.2;
   font-weight: 100;
   letter-spacing: 0.025em;
   color: #ffffff;
@@ -292,18 +292,16 @@
   opacity: 0;
   border: 1px solid #ffffff;
   background: none;
-  padding: 0.9375rem 2.5rem;
+  padding: 1.25rem 2.5rem 0.625rem 2.5rem;
   transition: 0.3s;
-}
-.app .first-btn:hover {
-  border: 1px solid #bc2503;
-}
-.app .first-btn a {
   font-size: 0.6875rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #ffffff;
+}
+.app .first-btn:hover {
+  border: 1px solid #bc2503;
 }
 .app .second-btn {
   -webkit-animation: 1s title 1s forwards;
@@ -536,6 +534,7 @@
 .about__container {
   position: relative;
   padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   display: flex;
   background-color: black;
 }
@@ -543,6 +542,7 @@
   .about__container {
     flex-direction: column;
     padding-top: 2.5rem;
+    padding-bottom: 0.625rem;
   }
 }
 @media (max-width: 768px) {
@@ -600,11 +600,11 @@
   position: relative;
   z-index: 22;
   padding-left: 0.9375rem;
-  margin-bottom: -150px;
   flex: 0 1 50%;
 }
 .about__img img {
   max-width: 100%;
+  margin-bottom: -180px;
 }
 @media (max-width: 582px) {
   .about__img img {
@@ -880,20 +880,6 @@
 */
 @font-face {
   font-family: "HelveticaNeueCyr";
-  src: url("../fonts/HelveticaNeueCyr-Medium.eot");
-  src: local("../fonts/HelveticaNeueCyr-Medium"), url("../fonts/HelveticaNeueCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "HelveticaNeueCyr";
-  src: url("../fonts/HelveticaNeueCyr-Heavy.eot");
-  src: local("../fonts/HelveticaNeueCyr-Heavy"), url("../fonts/HelveticaNeueCyr-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Heavy.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Heavy.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "HelveticaNeueCyr";
   src: url("../fonts/HelveticaNeueCyr-Bold.eot");
   src: local("../fonts/HelveticaNeueCyr-Bold"), url("../fonts/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
   font-weight: bold;
@@ -906,10 +892,23 @@
   font-weight: 300;
   font-style: normal;
 }
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("HelveticaNeueCyr-Roman.eot");
+  src: local("HelveticaNeueCyr-Roman"), url("HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("HelveticaNeueCyr-Roman.woff") format("woff"), url("HelveticaNeueCyr-Roman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("HelveticaNeueCyr-Thin.eot");
+  src: local("HelveticaNeueCyr-Thin"), url("HelveticaNeueCyr-Thin.eot?#iefix") format("embedded-opentype"), url("HelveticaNeueCyr-Thin.woff") format("woff"), url("HelveticaNeueCyr-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
 body {
   font-family: "HelveticaNeueCyr";
   font-weight: bold;
-  overflow-x: hidden;
 }
 
 .red {
@@ -917,6 +916,7 @@ body {
 }
 
 .wrapper {
+  overflow: hidden;
   min-height: 100%;
   display: flex;
   flex-direction: column;

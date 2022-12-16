@@ -67,27 +67,6 @@ $addSize: $startSize - $minSize;
 // } 
 @font-face {
 	font-family: 'HelveticaNeueCyr';
-	src: url('../fonts/HelveticaNeueCyr-Medium.eot');
-	src: local('../fonts/HelveticaNeueCyr-Medium'),
-		url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
-		url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'HelveticaNeueCyr';
-	src: url('../fonts/HelveticaNeueCyr-Heavy.eot');
-	src: local('../fonts/HelveticaNeueCyr-Heavy'),
-		url('../fonts/HelveticaNeueCyr-Heavy.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/HelveticaNeueCyr-Heavy.woff') format('woff'),
-		url('../fonts/HelveticaNeueCyr-Heavy.ttf') format('truetype');
-	font-weight: 900;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'HelveticaNeueCyr';
 	src: url('../fonts/HelveticaNeueCyr-Bold.eot');
 	src: local('../fonts/HelveticaNeueCyr-Bold'),
 		url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
@@ -106,15 +85,36 @@ $addSize: $startSize - $minSize;
 	font-weight: 300;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('HelveticaNeueCyr-Roman.eot');
+	src: local('HelveticaNeueCyr-Roman'),
+		url('HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+		url('HelveticaNeueCyr-Roman.woff') format('woff'),
+		url('HelveticaNeueCyr-Roman.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('HelveticaNeueCyr-Thin.eot');
+	src: local('HelveticaNeueCyr-Thin'),
+		url('HelveticaNeueCyr-Thin.eot?#iefix') format('embedded-opentype'),
+		url('HelveticaNeueCyr-Thin.woff') format('woff'),
+		url('HelveticaNeueCyr-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
 body{
 	font-family: 'HelveticaNeueCyr';
 	font-weight: bold;
-	overflow-x: hidden;
 }
 .red{
 	color: #f23005;
 }
 .wrapper{
+	overflow: hidden;
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;

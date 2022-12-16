@@ -113,7 +113,8 @@
 		padding: 0 rem(15, );
 		display: flex;
 		flex-wrap: wrap;
-		gap: 40px;
+		column-gap: 40px;
+		row-gap: 10px;
 		@media (max-width:582px) {
 			gap: 60px;
 		}
@@ -128,8 +129,8 @@
 		cursor: pointer;
 		display: none;
 		position: absolute;
-		top: 135%;
-		left: 37%;
+		top: 150%;
+		left: 0;
 		background: #f23005;
 		text-align: center;
 		padding: rem(5, );

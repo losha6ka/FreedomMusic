@@ -35,9 +35,6 @@
 		letter-spacing: 0.1em;
 		color: #ffffff;	
 		margin-bottom: rem(20, );
-		@media (max-width: 582px) {
-			@include adaptiv-value (font-size,36,18,0);
-		}
 	}
 
 	// .app__subtitle
@@ -90,18 +87,16 @@
 		opacity: 0;
 		border: 1px solid #ffffff;
 		background: none;
-		padding: rem(15, ) rem(40, );
+		padding: rem(20, ) rem(40, ) rem(10) rem(40, );
 		transition: 0.3s;
+		font-size: rem(11, );
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #ffffff;	
 		&:hover{
 			border: 1px solid #bc2503;
 		}
-		& a{
-			font-size: rem(11, );
-			font-weight: 700;
-			text-transform: uppercase;
-			letter-spacing: 0.1em;
-			color: #ffffff;	
-		}	
 	}
 	& .second-btn{
 		animation: 1s title 1s forwards;
@@ -147,7 +142,9 @@
 		
 		width: 100vw;
 		max-width: 100%;
-
+		@media (max-width: 582px) {
+			min-height: 652px;
+		}
 		&::after{
 			content: '';
 			z-index: 1;
@@ -158,8 +155,9 @@
 			background-size: cover;
 			width: 100vw;
 			min-height: 100vh;
-			@media (max-width: 1024px) {
-				display: none;
+			@media (max-width:1329.8px){
+				top: 0;
+				opacity: 0.7;
 			}
 		}
 	}
@@ -179,9 +177,9 @@
 			background-size: cover;
 			width: 100vw;
 			min-height: 100vh;
-			@media (max-width: 1024px) {
-				display: none;
-			}
+		}
+		@media (max-width: 582px) {
+			min-height: 652px;
 		}
 	}
 	& .threith-slide{
@@ -200,9 +198,9 @@
 			background-size: cover;
 			width: 100vw;
 			min-height: 100vh;
-			@media (max-width: 1024px) {
-				display: none;
-			}
+		}
+		@media (max-width: 582px) {
+			min-height: 652px;
 		}
 	}
 	& .swiper-button-prev::after,
@@ -393,7 +391,8 @@
 		& img{
 			max-width: 100%;
 			@media (max-width:582px) {
-				
+				max-height: 300px;
+				margin-bottom: -100px;
 			}
 		}
 		flex: 0 1 50%;
